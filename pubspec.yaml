@@ -12,7 +12,10 @@ dependencies:
   flutter:
     sdk: flutter
   image_gallery_saver_plus: ^3.0.5
-  pdf_image_renderer: ^0.7.0
+  pdf_image_renderer: 
+    git:
+      url: https://github.com/cyber-pride/pdf_image_renderer.git
+      ref: master  
 
 dev_dependencies:
   flutter_test:

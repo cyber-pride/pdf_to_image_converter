@@ -4,7 +4,7 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:pdf_image_renderer/pdf_image_renderer.dart';
-import 'package:image_gallery_saver/image_gallery_saver.dart';
+import 'package:image_gallery_saver_plus/image_gallery_saver_plus.dart';
 
 class PdfImageConverter {
   PdfImageRendererPdf? _pdf;
@@ -51,7 +51,7 @@ class PdfImageConverter {
   }
 
   Future<void> saveImage(Uint8List imageBytes, Function(bool) onSave) async {
-    final result = await ImageGallerySaver.saveImage(imageBytes);
+    final result = await ImageGallerySaverPlus.saveImage(imageBytes);
     onSave(result['isSuccess']);
   }
 }

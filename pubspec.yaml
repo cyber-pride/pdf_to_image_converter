@@ -11,7 +11,10 @@ dependencies:
   file_picker: ^8.0.6
   flutter:
     sdk: flutter
-  image_gallery_saver_plus: ^3.0.5
+  image_gallery_saver_plus:
+    git:
+      url: https://github.com/cyber-pride/image_gallery_saver_plus.git
+      ref: master
   pdf_image_renderer: 
     git:
       url: https://github.com/cyber-pride/pdf_image_renderer.git
